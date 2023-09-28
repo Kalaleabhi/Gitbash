@@ -1,0 +1,82 @@
+package com.WebDriverUtils;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ListenerImpClass implements ITestListener
+{
+	
+ExtentReports report;
+ExtentTest test;
+	@Override
+	public void onTestStart(ITestResult result)
+	{
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result)
+	{
+		
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result)
+	{
+		TakesScreenshot ts = (TakesScreenshot) BaseClass.sdriver;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		File dst = new File("./Screenshot/Failedscript.png");
+		try
+		{
+			FileUtils.copyFile(src, dst);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result)
+	{
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context)
+	{
+		//create html reports
+	ExtentSparkReporter htmlreport = new	ExtentSparkReporter("./Extentreport/report.html");
+		
+	htmlreport.config().setDocumentTitle("SDET-51");
+	htmlreport.config().setTheme(Theme.DARK);
+	htmlreport.config().setReportName("Online_Tourism_Management_System");
+	
+	 report = new ExtentReports();
+	report.attachReporter(htmlreport);
+	report.setSystemInfo("OS", "windows 10 pro");
+	report.setSystemInfo("Base-Browser", "chrome");
+	report.setSystemInfo("Base-URL", "http://rmgtestingserver/domain/Online_Tourism_Management_System");
+	report.setSystemInfo("Reporter Name", "Abhishek");
+	
+	
+	}
+
+	@Override
+	public void onFinish(ITestContext context)
+	{
+		
+	}
+
+	
+}

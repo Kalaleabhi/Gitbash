@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-27T22:58:41 IST" name="Default suite" finished-at="2023-09-27T22:59:12 IST" duration-ms="30794">
+    <groups>
+    </groups>
+    <test started-at="2023-09-27T22:58:41 IST" name="Default test" finished-at="2023-09-27T22:59:12 IST" duration-ms="30794">
+      <class name="com.PracticeTestNG.SpicejetTest">
+        <test-method signature="array()[pri:0, instance:com.PracticeTestNG.SpicejetTest@40a4337a]" started-at="2023-09-27T22:58:41 IST" name="array" finished-at="2023-09-27T22:58:41 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- array -->
+        <test-method signature="method()[pri:0, instance:com.PracticeTestNG.SpicejetTest@40a4337a]" started-at="2023-09-27T22:58:41 IST" name="method" finished-at="2023-09-27T22:59:12 IST" duration-ms="30701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+      </class> <!-- com.PracticeTestNG.SpicejetTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,38 @@
+1695106909388	Extract local variable 'wLib'
+1695107141853	Extract local variable 'eLib'
+1695107174114	Extract local variable 'pLib'
+1695107199640	Extract local variable 'dLib'
+1695107719160	Extract local variable 'BROWSER'
+1695107767411	Extract local variable 'URL'
+1695108073498	Extract local variable 'adminUN'
+1695108136818	Extract local variable 'adminPWD'
+1695108210221	Extract local variable 'alp'
+1695108965723	Extract local variable 'adb'
+1695109281494	Extract local variable 'wLib'
+1695109500020	Extract local variable 'a'
+1695110239801	Extract local variable 'hp'
+1695110586740	Copy compilation unit
+1695119855270	Delete element
+1695119937716	Delete element
+1695120180070	Delete element
+1695120207603	Rename resource 'A.xml'
+1695124723729	Delete element
+1695182965831	Copy compilation unit
+1695182999800	Rename type 'IntegrationTestCase1'
+1695183402192	Copy compilation unit
+1695183433835	Rename type 'IntegrationTestCases'
+1695183526440	Delete element
+1695183532972	Delete element
+1695183538661	Copy compilation unit
+1695183559832	Rename type 'IntegrationTestCases'
+1695186063745	Copy compilation unit
+1695193958606	Extract local variable 'sa'
+1695194134593	Extract local variable 'sa'
+1695279744856	Extract local variable 'htmlreport'
+1695279922574	Extract local variable 'report'
+1695280534619	Extract local variable 'MethodName'
+1695281386299	Extract local variable 'methodName'
+1695281764108	Extract local variable 'FailedScript'
+1695281992928	Extract local variable 'methodName'
+1695282197005	Extract local variable 'methodName'
+1695299798966	Delete element

@@ -1,0 +1,13 @@
+package com.AbhiGithub;
+
+import org.testng.annotations.Test;
+
+public class inboxTest {
+
+	@Test
+	public void sample
+	
+
+	}
+
+
